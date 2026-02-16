@@ -162,31 +162,24 @@
         margin-top: 3rem;
       }
 
-      .skill-bar {
-        margin: 1rem 0;
-        background: #0f0f0f;
-        border-radius: 5px;
-        height: 25px;
-        overflow: hidden;
-        border: 1px solid #00d4ff;
-      }
-
-      .skill-progress {
-        height: 100%;
-        background: linear-gradient(90deg, #00d4ff, #00f7ff);
-        border-radius: 5px;
-        transition: width 0.6s ease;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.85rem;
-        font-weight: bold;
+      .skill-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #00d4ff 0%, #00f7ff 100%);
         color: #0f0f0f;
+        padding: 0.6rem 1.2rem;
+        margin: 0.5rem 0.5rem 0.5rem 0;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        animation: fadeInUp 0.6s ease forwards;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
       }
 
-      .fade-in {
-        opacity: 0;
-        animation: fadeInUp 0.6s ease forwards;
+      .skill-badge:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
       }
 
       @keyframes fadeInUp {
@@ -204,31 +197,69 @@
         animation: fadeInUp 0.6s ease forwards;
       }
 
-      .skill-item:nth-child(1) { animation-delay: 0s; }
-      .skill-item:nth-child(2) { animation-delay: 0.1s; }
-      .skill-item:nth-child(3) { animation-delay: 0.2s; }
-      .skill-item:nth-child(4) { animation-delay: 0.3s; }
-      .skill-item:nth-child(5) { animation-delay: 0.4s; }
-      .skill-item:nth-child(6) { animation-delay: 0.5s; }
-      .skill-item:nth-child(7) { animation-delay: 0.6s; }
-      .skill-item:nth-child(8) { animation-delay: 0.7s; }
-      .skill-item:nth-child(9) { animation-delay: 0.8s; }
-      .skill-item:nth-child(10) { animation-delay: 0.9s; }
-      .skill-item:nth-child(11) { animation-delay: 1s; }
-      .skill-item:nth-child(12) { animation-delay: 1.1s; }
-      .skill-item:nth-child(13) { animation-delay: 1.2s; }
-      .skill-item:nth-child(14) { animation-delay: 1.3s; }
-      .skill-item:nth-child(15) { animation-delay: 1.4s; }
-      .skill-item:nth-child(16) { animation-delay: 1.5s; }
+      .skill-item:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .skill-item:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .skill-item:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .skill-item:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .skill-item:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      .skill-item:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+      .skill-item:nth-child(7) {
+        animation-delay: 0.6s;
+      }
+      .skill-item:nth-child(8) {
+        animation-delay: 0.7s;
+      }
+      .skill-item:nth-child(9) {
+        animation-delay: 0.8s;
+      }
+      .skill-item:nth-child(10) {
+        animation-delay: 0.9s;
+      }
+      .skill-item:nth-child(11) {
+        animation-delay: 1s;
+      }
+      .skill-item:nth-child(12) {
+        animation-delay: 1.1s;
+      }
+      .skill-item:nth-child(13) {
+        animation-delay: 1.2s;
+      }
+      .skill-item:nth-child(14) {
+        animation-delay: 1.3s;
+      }
+      .skill-item:nth-child(15) {
+        animation-delay: 1.4s;
+      }
+      .skill-item:nth-child(16) {
+        animation-delay: 1.5s;
+      }
 
       .project-card.fade-in {
         opacity: 0;
         animation: fadeInUp 0.6s ease forwards;
       }
 
-      .project-card:nth-child(1) { animation-delay: 0s; }
-      .project-card:nth-child(2) { animation-delay: 0.2s; }
-      .project-card:nth-child(3) { animation-delay: 0.4s; }
+      .project-card:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .project-card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .project-card:nth-child(3) {
+        animation-delay: 0.4s;
+      }
 
       @media (max-width: 768px) {
         .nav-links {
@@ -284,78 +315,22 @@
         <div>
           <h3>Technical Skills</h3>
           <div id="skills-container">
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>HTML & CSS</span>
-                <span>95%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>JavaScript</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>React</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>Vue</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>Angular</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>Next.js</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>Node.js</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                <span>PHP</span>
-                <span>80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" style="width: 0%"></div>
-              </div>
-            </div>
+            <div class="skill-badge">HTML & CSS</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">React</div>
+            <div class="skill-badge">Vue</div>
+            <div class="skill-badge">Angular</div>
+            <div class="skill-badge">Next.js</div>
+            <div class="skill-badge">Node.js</div>
+            <div class="skill-badge">PHP</div>
+            <div class="skill-badge">SQL & Databases</div>
+            <div class="skill-badge">REST APIs</div>
+            <div class="skill-badge">Git & Version Control</div>
+            <div class="skill-badge">VS Code</div>
+            <div class="skill-badge">Webpack</div>
+            <div class="skill-badge">npm</div>
+            <div class="skill-badge">Responsive Design</div>
+            <div class="skill-badge">Web Applications</div>
           </div>
         </div>
       </div>
@@ -375,7 +350,7 @@
             </p>
             <a
               href="https://homebound-ecommerce.netlify.app"
-              style="color: #667eea; text-decoration: none"
+              style="color: #00d4ff; text-decoration: none"
               >View Project →</a
             >
           </div>
@@ -391,7 +366,7 @@
             </p>
             <a
               href="https://rootedwebsite.netlify.app/"
-              style="color: #667eea; text-decoration: none"
+              style="color: #00d4ff; text-decoration: none"
               >View Project →</a
             >
           </div>
@@ -407,7 +382,7 @@
             </p>
             <a
               href="https://lesedi-weather-app.netlify.app/"
-              style="color: #667eea; text-decoration: none"
+              style="color: #00d4ff; text-decoration: none"
               >View Project →</a
             >
           </div>
@@ -433,35 +408,34 @@
 
     <script>
       // Smooth scroll navigation
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', (e) => {
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", (e) => {
           e.preventDefault();
-          const target = document.querySelector(link.getAttribute('href'));
-          target.scrollIntoView({ behavior: 'smooth' });
+          const target = document.querySelector(link.getAttribute("href"));
+          target.scrollIntoView({ behavior: "smooth" });
         });
       });
 
-      // Animate skill bars on scroll
+      // Animate skill badges on scroll
       function animateSkills() {
-        const skillBars = document.querySelectorAll('.skill-progress');
-        const skillsSection = document.getElementById('skills-container');
-        
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              // Get the target width from parent
-              const progressBars = document.querySelectorAll('.skill-progress');
-              const skillPercentages = [95, 90, 85, 80, 80, 85, 85, 80];
-              
-              progressBars.forEach((bar, index) => {
-                bar.style.width = skillPercentages[index] + '%';
-              });
-              
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.5 });
-        
+        const skillBadges = document.querySelectorAll(".skill-badge");
+        const skillsSection = document.getElementById("skills-container");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                skillBadges.forEach((badge, index) => {
+                  badge.style.animation = `fadeInUp 0.6s ease forwards`;
+                  badge.style.animationDelay = index * 0.08 + "s";
+                });
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+
         if (skillsSection) {
           observer.observe(skillsSection);
         }
@@ -469,23 +443,43 @@
 
       // Animate project cards on scroll
       function animateProjectCards() {
-        const projectCards = document.querySelectorAll('.project-card');
-        
+        const projectCards = document.querySelectorAll(".project-card");
+
         projectCards.forEach((card, index) => {
-          card.classList.add('fade-in');
-          card.style.animationDelay = (index * 0.2) + 's';
+          card.classList.add("fade-in");
+          card.style.animationDelay = index * 0.2 + "s";
         });
       }
 
-      // Run animations on page load and scroll
-      window.addEventListener('load', () => {
+      // Add glow effect on mouse move for a subtle interactive feel
+      document.addEventListener("mousemove", (e) => {
+        const cards = document.querySelectorAll(".project-card");
+        cards.forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          // Calculate if mouse is near card
+          if (
+            x > -50 &&
+            x < rect.width + 50 &&
+            y > -50 &&
+            y < rect.height + 50
+          ) {
+            card.style.boxShadow = `0 8px 20px rgba(0, 212, 255, 0.3)`;
+          }
+        });
+      });
+
+      // Run animations on page load
+      window.addEventListener("load", () => {
         animateSkills();
         animateProjectCards();
       });
 
-      // Scroll event for additional effects
+      // Debounced scroll event for skill animations
       let scrollTimeout;
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(() => {
           animateSkills();
