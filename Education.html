@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesedi's Portfolio - Education</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #e0e0e0;
+        background: #0f0f0f;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .nav-links a:hover {
+        opacity: 0.8;
+      }
+
+      section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #00d4ff;
+      }
+
+      .education {
+        background: #1a1a2e;
+      }
+
+      .education-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .education-item {
+        background: #1a1a2e;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 212, 255, 0.2);
+        border: 1px solid #00d4ff;
+      }
+
+      .education-item h3 {
+        color: #00d4ff;
+        margin-bottom: 0.5rem;
+      }
+
+      .education-item p {
+        color: #e0e0e0;
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header/Navigation -->
+    <header>
+      <nav>
+        <div class="logo">LESEDI</div>
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Home.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Education Section -->
+    <section class="education">
+      <h2>Education</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <h3>AWS Cloud Practitioner | Coursera | Feb 2026</h3>
+        </div>
+        <div class="education-item">
+          <h3>
+            Business Systems Analysis | University of Cape Town (UCT) via
+            GetSmarter | Feb 2024
+          </h3>
+          <p>
+            Core Modules: Systems Thinking & Strategy, Requirements Elicitation,
+            Process & Data Modeling (BPMN/ERDs), Solution Design & QA
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>Introduction to IT | Codecademy | Mar 2024</h3>
+          <p>
+            Core Modules: IT Hardware/Networking, Data Representation, Operating
+            Systems, Databases & Cybersecurity
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>
+            Introduction to Career Skills in Data Analytics | LinkedIn Learning
+            | Jan 2024
+          </h3>
+          <p>
+            Core Modules: Data Analysis Lifecycle, Data Wrangling &
+            Visualization, SQL Fundamentals, Storytelling
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>
+            SheCodes Web Development Curriculum | SheCodes Bootcamp Diploma |
+            Jan 2022
+          </h3>
+          <p>
+            Core Modules: Front-End Fundamentals, Advanced JavaScript & APIs,
+            React Development, Responsive Engineering, AI Integration, Python &
+            Data
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>SheCodes AI Add-On | SheCodes | Oct 2023</h3>
+          <p>
+            Core Modules: AI-Powered Web Apps, Prompt Engineering, API
+            Integration, AI UX/UI Design
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>SheCodes Responsive | SheCodes | Sep 2023</h3>
+          <p>
+            Core Modules: Mobile-First Design, Media Queries, Flexbox, CSS Grid,
+            Responsive Layouts, Hosting & Deployment
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>SheCodes React | SheCodes | Aug 2023</h3>
+          <p>
+            Core Modules: JSX, Components & Props, State Management, Event
+            Handling, Forms, API Calls, Functional Components
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>SheCodes Python | SheCodes | Jul 2023</h3>
+          <p>
+            Core Modules: Python Basics, Data Manipulation, APIs,
+            Object-Oriented Programming, File Handling, Data Visualization
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>SheCodes Plus | SheCodes | May 2023</h3>
+          <p>
+            Core Modules: Advanced HTML/CSS/JavaScript, Git & GitHub, API
+            Integration, Interactive Web Applications, Debugging
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>SheCodes Foundation Recipient | SheCodes | 2023</h3>
+          <p>
+            Core Modules: Full Curriculum Access (Basics, Plus, Responsive,
+            React, Python, AI)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Lesedi's Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
